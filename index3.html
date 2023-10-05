@@ -9,73 +9,129 @@
         }
 
         body {
+            height: 600px;
+            width: 400px;
             margin: 0;
             padding: 0;
-            font-family: "Arial";
         }
 
-        header {
-            font-size: 14px;
-            height: 100px;
-            width: 570px;
+        p.title {
+            color: white;
+            font: 16px Tahoma;
+            margin: 16px 0 0 0;
+        }
+
+        p.text {
+            color: white;
+            font: 12px Tahoma;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+
+        .header {
+            height: 70px;
+            width: 400px;
             background-color: #c4996c;
             text-align: center;
-            color: white;
-            padding-top: 10px;
             border: 1px solid black;
         }
 
-        #company {
-            font-size: 14px;
+        .company {
+            height: 125px;
+            width: 400px;
             margin-top: 10px;
-            height: 170px;
-            width: 570px;
             background-color: #a8a9ac;
             text-align: center;
-            color: white;
             padding-top: 10px;
             border: 1px solid black;
         }
 
-        #services {
+        .services {
             text-align: center;
-            width: 570px;
+            color: black;
+            width: 400px;
         }
 
-        footer {
-            font-size: 14px;
-            height: 90px;
-            width: 570px;
+        .services .services_title {
+            font: 20px Tahoma;
+        }
+
+        .column {
+            height: 110px;
+            width: 100px;
+            float: left;
+            margin: 10px;
+            background-color: #a8a9ac;
+            border: 1px solid black;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .footer {
+            height: 70px;
+            width: 400px;
             background-color: #115d7f;
             text-align: center;
-            color: white;
             border: 1px solid black;
         }
 
     </style>
 </head>
 <body>
+<div id="page" class="page">
+    <div class="header">
+        <p class="title">Header section</p>
+        <p class="text">900px -120px</p>
+    </div>
 
-<header>
-    <h2>Header section</h2>
-    <p>900px -120px</p>
-</header>
+    <div class="company">
+        <p class="title">Company Image</p>
+        <p class="text">900px - 400px</p>
+        <p class="text">designed by - gdatamart.com</p>
+    </div>
 
-<section id="company">
-    <h2>Company Image</h2>
-    <p>900px - 400px</p>
-    <p>designed by - gdatamart.com</p>
-</section>
+    <div class="services">
+        <div class="services_title">
+            <p>Our Services</p>
+        </div>
+        <div class="services_columns">
+            <div class="row">
+                <div class="column">
+                    <p class="title">services</p>
+                    <p class="text">width:180px</p>
+                    <p class="text">height:220px</p>
+                </div>
+                <div class="column">
+                    <p class="title">services</p>
+                </div>
+                <div class="column">
+                    <p class="title">services</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
 
-<section id="services">
-    <h1>Our Services</h1>
+                </div>
+                <div class="column">
 
-</section>
-<br>
-<footer>
-    <h2>Footer section</h2>
-    <p>900px - 120px</p>
-</footer>
+                </div>
+                <div class="column">
 
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="title">Footer section</p>
+        <p class="text">900px - 120px</p>
+    </div>
+
+</div>
 </body>
 </html>
