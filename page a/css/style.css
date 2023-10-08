@@ -93,26 +93,27 @@ a, p {
 #section_normal_4_2 .omega .pix_button {
     height: 40px;
     width: 120px;
-    background-color: #2dc0e8; /* Green */
+    background-color: #2dc0e8;
     border: none;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     border-radius: 4px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: solid 2px #259fc0;
+}
+
+#section_normal_4_2 .omega i.pixicon-eye {
+    height: 12px;
+    width: 14px;
+    color: white;
 }
 
 #section_normal_4_2 .omega span {
-    font-size: 16px;
     color: white;
-}
-
-#section_normal_4_2 .omega i.pi.pixicon-eye {
-    height: 11px;
-    width: 14px;
-    color: white;
+    font-weight: 600;
 }
 
 /*section_normal_6*/
@@ -226,12 +227,13 @@ a, p {
 #section_agency_5 {
     height: 365px;
     background-color: #ffffff;
+    text-align: center;
 }
+
 
 #section_agency_5 .f1_style {
     color: #6ca477;
     font-size: 18px;
-    text-align: center;
     padding-top: 48px;
     font-weight: 400;
 }
@@ -240,7 +242,6 @@ a, p {
     color: #bbbbbb;
     font-size: 12px;
     width: 400px;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
@@ -250,7 +251,6 @@ a, p {
     background-color: #ffffff;
     border: 2px solid #5e9c6b;
     padding: 20px 17px;
-    text-align: center;
     display: inline-block;
     cursor: pointer;
     margin-top: 30px;
@@ -262,6 +262,26 @@ a, p {
     color: #609d6d;
     text-decoration: none;
 }
+
+#section_agency_5 .rights_st {
+    font-size: 10px;
+    color: #b5b5b5;
+    margin-top: 40px;
+}
+
+#section_agency_5 span.pix_text {
+    margin-top: 28px;
+}
+
+#section_agency_5 .pixfort_st {
+    color: #5b9a68;
+    font-weight: 600;
+}
+
+#section_agency_5 .pix_inline_block {
+    margin-top: 28px;
+}
+
 
 .container {
     width: 1200px;
